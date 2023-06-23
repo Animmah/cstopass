@@ -26,7 +26,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post(`http://localhost:4000/StudentSignup`,
+      const { data } = await axios.post(`https://cstopass-service.onrender.com/StudentSignup`,
         {...inputValue},{ withCredentials: true }
       );
       const { success, message } = data;
