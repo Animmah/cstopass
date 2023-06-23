@@ -24,9 +24,10 @@ const AdminLogin = () => {
       const { data } = await axios.post("https://cstopass-service.onrender.com/AdminLogin",{...inputValue},{ withCredentials: true });
   
       const { success, message } = data;
+      console.log(success);
       if (success) {
         handleSuccess(message);
-        setTimeout(() => {navigate("/admin-page");}, 10000);
+        setTimeout(() => {navigate("/admin-page");}, 1000);
       } else handleError(message);
 
     } catch (error) {
