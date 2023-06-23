@@ -21,7 +21,7 @@ const UserPage=()=>{
     useEffect(()=>{
         const getData=async ()=>{
             try{
-                const res=await axios.get("http://localhost:4000/fetchData");
+                const res=await axios.get("https://cstopass-service.onrender.com/fetchData");
                 setData(res.data);
                 setToDisplay(res.data);
             }
