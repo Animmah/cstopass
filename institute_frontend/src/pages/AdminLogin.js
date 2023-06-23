@@ -26,7 +26,7 @@ const AdminLogin = () => {
       const { success, message } = data;
       if (success) {
         handleSuccess(message);
-        setTimeout(() => {navigate("https://cstopass.netlify.app/admin-page");}, 1000);
+        setTimeout(() => {navigate("/admin-page");}, 1000);
       } else handleError(message);
 
     } catch (error) {
@@ -37,7 +37,7 @@ const AdminLogin = () => {
 
   return (
     <div className="admin-login">
-    <button className="home-icon" onClick={(e)=>{navigate("https://cstopass.netlify.app/")}}><HomeIcon /></button>
+    <button className="home-icon" onClick={(e)=>{navigate("/")}}><HomeIcon /></button>
     <div className="form-container">
       <h2>Admin Login</h2>
       <form onSubmit={handleSubmit}>
