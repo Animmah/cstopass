@@ -33,7 +33,7 @@ const CreatePassout = () => {
     e.preventDefault();
     // console.log(e.target[0]);
     try {
-      const { data } = await axios.post(`http://localhost:4000/passoutCreate`,
+      const { data } = await axios.post(`https://cstopass-service.onrender.com/passoutCreate`,
         {...inputValue},{ withCredentials: true }
       );
       const { success, message } = data;
