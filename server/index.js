@@ -27,7 +27,7 @@ app.listen(PORT, () => {
 
 app.use(
   cors({
-    origin: ["https://cstopass-service.onrender.com"],
+    origin: ["https://cstopass.netlify.app"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
