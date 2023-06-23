@@ -24,7 +24,7 @@ const CreatePassout = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post(`http://localhost:4000/passoutDelete`,
+      const { data } = await axios.post(`https://cstopass-service.onrender.com/passoutDelete`,
         {...inputValue},{ withCredentials: true }
       );
       const { success, message } = data;
