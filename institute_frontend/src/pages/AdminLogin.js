@@ -26,7 +26,7 @@ const AdminLogin = () => {
       const { success, message } = data;
       if (success) {
         handleSuccess(message);
-        setTimeout(() => {navigate("/admin-page");}, 1000);
+        setTimeout(() => {navigate("/admin-page");}, 10000);
       } else handleError(message);
 
     } catch (error) {
